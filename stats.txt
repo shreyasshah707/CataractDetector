@@ -1,0 +1,39 @@
+[Data] Loading ODIR-2019 ...
+[ODIR] Loaded labels from /kaggle/input/datasets/andrewmvd/ocular-disease-recognition-odir5k/ODIR-5K/ODIR-5K/data.xlsx
+[ODIR] Found images directory at /kaggle/input/datasets/andrewmvd/ocular-disease-recognition-odir5k/ODIR-5K/ODIR-5K/Training Images
+       ODIR rows : 7000
+[Data] Loading RFMiD 2.0 ...
+       RFMiD rows: 3200
+[Data] Combined  : 10200 images
+
+[Data] Class distribution:
+       Normal      :  3191  (31.3%)
+       DR          :  2888  (28.3%)
+       Glaucoma    :   621  (6.1%)
+       Cataract    :   340  (3.3%)
+       AMD         :   443  (4.3%)
+       Other       :  2717  (26.6%)
+
+[Data] Split -> train:7137  val:1530  test:1533
+Loaded best model from Epoch 14 (Val Bal Acc: 0.6270)
+
+============================================================
+  TEST SET RESULTS
+============================================================
+  Balanced Accuracy : 0.6290
+  Macro F1-Score    : 0.5369
+
+Per-class:
+              precision    recall  f1-score   support
+
+      Normal       0.58      0.49      0.53       479
+          DR       0.66      0.69      0.67       434
+    Glaucoma       0.39      0.68      0.50        94
+    Cataract       0.29      0.80      0.43        51
+         AMD       0.43      0.63      0.51        67
+       Other       0.71      0.48      0.57       408
+
+    accuracy                           0.57      1533
+   macro avg       0.51      0.63      0.54      1533
+weighted avg       0.61      0.57      0.58      1533
+
