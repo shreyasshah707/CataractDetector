@@ -1,0 +1,10 @@
+# EDD v2 — Research dependencies (all free / open-source)
+tensorflow==2.15.0
+scikit-learn==1.4.0
+numpy==1.26.0
+Pillow==10.1.0
+tf2onnx==1.16.0
+matplotlib==3.7.0
+streamlit==1.28.0
+opencv-python==4.8.0
+joblib==1.3.0

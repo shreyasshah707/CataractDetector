@@ -1,0 +1,9 @@
+image,ground_truth,mean_luminance,stage1_prediction,stage1_correct,two_stage_decision,two_stage_correct,stage2_severity,b0_binary_prediction,b0_binary_correct
+cataracts.jpg,cataract,15.991,cataract,YES,Cataract Detected (Immature),YES,immature,normal,NO (False Neg.)
+DS00050-IM01228-vi7-cataractthu-en.avif,cataract,18.67,cataract,YES,Cataract Detected (Mature),YES,mature,normal,NO (False Neg.)
+images (10).jpg,cataract,15.512,cataract,YES,Cataract Detected (Immature),YES,immature,normal,NO (False Neg.)
+images (7).jpg,cataract,14.488,normal,NO (False Neg.),No Cataract Detected (Normal),NO (False Neg.),mature,normal,NO (False Neg.)
+images (8).jpg,cataract,15.512,cataract,YES,Cataract Detected (Immature),YES,immature,normal,NO (False Neg.)
+images (9).jpg,cataract,15.614,cataract,YES,Cataract Detected (Immature),YES,immature,cataract,YES
+overview-of-cataract-top-image.avif,cataract,15.554,cataract,YES,Cataract Detected (Immature),YES,immature,normal,NO (False Neg.)
+shutterstock_673305820-352x235.jpg,cataract,15.411,cataract,YES,Cataract Detected (Immature),YES,immature,normal,NO (False Neg.)

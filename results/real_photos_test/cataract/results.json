@@ -1,0 +1,350 @@
+{
+  "evaluated_at": "2026-11-17T09:34:09.110786+00:00",
+  "metrics": {
+    "total_cataract_samples": 8,
+    "stage1_svm_recall_sensitivity": 0.875,
+    "two_stage_pipeline_recall_sensitivity": 0.875,
+    "b0_binary_recall_sensitivity": 0.125,
+    "stage1_correct_count": 7,
+    "two_stage_correct_count": 7,
+    "b0_binary_correct_count": 1
+  },
+  "results": [
+    {
+      "image": "cataracts.jpg",
+      "ground_truth": "cataract",
+      "resolution": {
+        "width": 800,
+        "height": 450
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 15.991,
+        "std_luminance": 1.583,
+        "decision_function_score": 1.2285,
+        "prediction": "cataract",
+        "correct": true,
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_cataracts.png"
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "immature",
+        "confidence": 0.5605,
+        "probabilities": {
+          "immature": 0.5605,
+          "mature": 0.4395
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_cataracts.png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "normal",
+        "confidence": 0.5194,
+        "probabilities": {
+          "cataract": 0.4806,
+          "normal": 0.5194
+        },
+        "correct": false,
+        "gradcam_overlay": "gradcam\\gradcam_binary_cataracts.png"
+      },
+      "two_stage_pipeline": {
+        "final_decision": "Cataract Detected (Immature)",
+        "stage1_gate": "cataract",
+        "stage2_severity": "immature",
+        "correct": true
+      }
+    },
+    {
+      "image": "DS00050-IM01228-vi7-cataractthu-en.avif",
+      "ground_truth": "cataract",
+      "resolution": {
+        "width": 632,
+        "height": 319
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 18.67,
+        "std_luminance": 3.036,
+        "decision_function_score": 0.6782,
+        "prediction": "cataract",
+        "correct": true,
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_DS00050-IM01228-vi7-cataractthu-en.png"
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "mature",
+        "confidence": 0.5162,
+        "probabilities": {
+          "immature": 0.4838,
+          "mature": 0.5162
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_DS00050-IM01228-vi7-cataractthu-en.png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "normal",
+        "confidence": 0.6211,
+        "probabilities": {
+          "cataract": 0.3789,
+          "normal": 0.6211
+        },
+        "correct": false,
+        "gradcam_overlay": "gradcam\\gradcam_binary_DS00050-IM01228-vi7-cataractthu-en.png"
+      },
+      "two_stage_pipeline": {
+        "final_decision": "Cataract Detected (Mature)",
+        "stage1_gate": "cataract",
+        "stage2_severity": "mature",
+        "correct": true
+      }
+    },
+    {
+      "image": "images (10).jpg",
+      "ground_truth": "cataract",
+      "resolution": {
+        "width": 592,
+        "height": 337
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 15.512,
+        "std_luminance": 2.137,
+        "decision_function_score": 0.7378,
+        "prediction": "cataract",
+        "correct": true,
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_images_(10).png"
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "immature",
+        "confidence": 0.5209,
+        "probabilities": {
+          "immature": 0.5209,
+          "mature": 0.4791
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_images_(10).png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "normal",
+        "confidence": 0.6135,
+        "probabilities": {
+          "cataract": 0.3865,
+          "normal": 0.6135
+        },
+        "correct": false,
+        "gradcam_overlay": "gradcam\\gradcam_binary_images_(10).png"
+      },
+      "two_stage_pipeline": {
+        "final_decision": "Cataract Detected (Immature)",
+        "stage1_gate": "cataract",
+        "stage2_severity": "immature",
+        "correct": true
+      }
+    },
+    {
+      "image": "images (7).jpg",
+      "ground_truth": "cataract",
+      "resolution": {
+        "width": 447,
+        "height": 447
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 14.488,
+        "std_luminance": 2.318,
+        "decision_function_score": -1.0377,
+        "prediction": "normal",
+        "correct": false,
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_images_(7).png"
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "mature",
+        "confidence": 0.5091,
+        "probabilities": {
+          "immature": 0.4909,
+          "mature": 0.5091
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_images_(7).png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "normal",
+        "confidence": 0.533,
+        "probabilities": {
+          "cataract": 0.467,
+          "normal": 0.533
+        },
+        "correct": false,
+        "gradcam_overlay": "gradcam\\gradcam_binary_images_(7).png"
+      },
+      "two_stage_pipeline": {
+        "final_decision": "No Cataract Detected (Normal)",
+        "stage1_gate": "normal",
+        "stage2_severity": null,
+        "correct": false
+      }
+    },
+    {
+      "image": "images (8).jpg",
+      "ground_truth": "cataract",
+      "resolution": {
+        "width": 592,
+        "height": 337
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 15.512,
+        "std_luminance": 2.137,
+        "decision_function_score": 0.7378,
+        "prediction": "cataract",
+        "correct": true,
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_images_(8).png"
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "immature",
+        "confidence": 0.5097,
+        "probabilities": {
+          "immature": 0.5097,
+          "mature": 0.4903
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_images_(8).png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "normal",
+        "confidence": 0.5944,
+        "probabilities": {
+          "cataract": 0.4056,
+          "normal": 0.5944
+        },
+        "correct": false,
+        "gradcam_overlay": "gradcam\\gradcam_binary_images_(8).png"
+      },
+      "two_stage_pipeline": {
+        "final_decision": "Cataract Detected (Immature)",
+        "stage1_gate": "cataract",
+        "stage2_severity": "immature",
+        "correct": true
+      }
+    },
+    {
+      "image": "images (9).jpg",
+      "ground_truth": "cataract",
+      "resolution": {
+        "width": 547,
+        "height": 365
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 15.614,
+        "std_luminance": 1.546,
+        "decision_function_score": 0.9864,
+        "prediction": "cataract",
+        "correct": true,
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_images_(9).png"
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "immature",
+        "confidence": 0.5602,
+        "probabilities": {
+          "immature": 0.5602,
+          "mature": 0.4398
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_images_(9).png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "cataract",
+        "confidence": 0.5222,
+        "probabilities": {
+          "cataract": 0.5222,
+          "normal": 0.4778
+        },
+        "correct": true,
+        "gradcam_overlay": "gradcam\\gradcam_binary_images_(9).png"
+      },
+      "two_stage_pipeline": {
+        "final_decision": "Cataract Detected (Immature)",
+        "stage1_gate": "cataract",
+        "stage2_severity": "immature",
+        "correct": true
+      }
+    },
+    {
+      "image": "overview-of-cataract-top-image.avif",
+      "ground_truth": "cataract",
+      "resolution": {
+        "width": 2600,
+        "height": 1463
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 15.554,
+        "std_luminance": 1.252,
+        "decision_function_score": 0.8497,
+        "prediction": "cataract",
+        "correct": true,
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_overview-of-cataract-top-image.png"
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "immature",
+        "confidence": 0.5652,
+        "probabilities": {
+          "immature": 0.5652,
+          "mature": 0.4348
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_overview-of-cataract-top-image.png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "normal",
+        "confidence": 0.5579,
+        "probabilities": {
+          "cataract": 0.4421,
+          "normal": 0.5579
+        },
+        "correct": false,
+        "gradcam_overlay": "gradcam\\gradcam_binary_overview-of-cataract-top-image.png"
+      },
+      "two_stage_pipeline": {
+        "final_decision": "Cataract Detected (Immature)",
+        "stage1_gate": "cataract",
+        "stage2_severity": "immature",
+        "correct": true
+      }
+    },
+    {
+      "image": "shutterstock_673305820-352x235.jpg",
+      "ground_truth": "cataract",
+      "resolution": {
+        "width": 352,
+        "height": 235
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 15.411,
+        "std_luminance": 1.81,
+        "decision_function_score": 0.4278,
+        "prediction": "cataract",
+        "correct": true,
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_shutterstock_673305820-352x235.png"
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "immature",
+        "confidence": 0.5027,
+        "probabilities": {
+          "immature": 0.5027,
+          "mature": 0.4973
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_shutterstock_673305820-352x235.png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "normal",
+        "confidence": 0.5231,
+        "probabilities": {
+          "cataract": 0.4769,
+          "normal": 0.5231
+        },
+        "correct": false,
+        "gradcam_overlay": "gradcam\\gradcam_binary_shutterstock_673305820-352x235.png"
+      },
+      "two_stage_pipeline": {
+        "final_decision": "Cataract Detected (Immature)",
+        "stage1_gate": "cataract",
+        "stage2_severity": "immature",
+        "correct": true
+      }
+    }
+  ]
+}

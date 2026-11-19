@@ -1,0 +1,10 @@
+image,ground_truth,stage1_mean_luminance,stage1_prediction,stage1_correct,two_stage_pipeline_decision,two_stage_correct,stage2_severity_prediction,b0_binary_prediction,b0_binary_correct
+WhatsApp Image 2026-11-16 at 15.44.42.jpeg,normal,14.894,normal,YES,No Cataract Detected (Normal),YES,mature,normal,YES
+WhatsApp Image 2026-11-16 at 15.47.27.jpeg,normal,15.89,cataract,NO (False Positive),Cataract Detected (Immature),NO (False Positive),immature,cataract,NO (False Positive)
+WhatsApp Image 2026-11-16 at 16.12.26.jpeg,normal,13.716,normal,YES,No Cataract Detected (Normal),YES,immature,normal,YES
+WhatsApp Image 2026-11-16 at 16.12.27.jpeg,normal,14.855,normal,YES,No Cataract Detected (Normal),YES,mature,normal,YES
+WhatsApp Image 2026-11-16 at 16.50.29 (1).jpeg,normal,14.082,normal,YES,No Cataract Detected (Normal),YES,immature,cataract,NO (False Positive)
+WhatsApp Image 2026-11-16 at 16.50.29.jpeg,normal,14.289,normal,YES,No Cataract Detected (Normal),YES,immature,normal,YES
+WhatsApp Image 2026-11-16 at 19.13.01.jpeg,normal,14.334,normal,YES,No Cataract Detected (Normal),YES,immature,normal,YES
+WhatsApp Image 2026-11-16 at 19.14.20.jpeg,normal,15.15,normal,YES,No Cataract Detected (Normal),YES,immature,normal,YES
+WhatsApp Image 2026-11-16 at 19.14.21.jpeg,normal,14.792,normal,YES,No Cataract Detected (Normal),YES,mature,cataract,NO (False Positive)

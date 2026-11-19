@@ -1,0 +1,9 @@
+data/
+.venv/
+__pycache__/
+.keras_cache/
+.mpl_cache/
+models/
+parsed_paper/
+extract_paper.py
+paper.pdf

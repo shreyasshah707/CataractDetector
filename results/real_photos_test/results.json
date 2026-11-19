@@ -1,0 +1,421 @@
+{
+  "evaluated_at": "2026-11-16T14:00:28.380416+00:00",
+  "total_images": 9,
+  "source_dir": "data\\real_photos_test",
+  "results": [
+    {
+      "image": "WhatsApp Image 2026-11-16 at 15.44.42.jpeg",
+      "resolution": {
+        "width": 974,
+        "height": 1280
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 14.894,
+        "std_luminance": 1.081,
+        "healthy_mean_benchmark": 14.658,
+        "diseased_mean_benchmark": 15.655,
+        "decision_function_score": -0.9733,
+        "prediction": "normal",
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_WhatsApp Image 2026-11-16 at 15.44.42.png",
+        "correct": true
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "mature",
+        "confidence": 0.5206,
+        "probabilities": {
+          "immature": 0.4794,
+          "mature": 0.5206
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_WhatsApp Image 2026-11-16 at 15.44.42.png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "normal",
+        "confidence": 0.5637,
+        "probabilities": {
+          "cataract": 0.4363,
+          "normal": 0.5637
+        },
+        "gradcam_overlay": "gradcam\\gradcam_binary_WhatsApp Image 2026-11-16 at 15.44.42.png",
+        "correct": true
+      },
+      "two_stage_pipeline": {
+        "final_decision": "No Cataract Detected (Normal)",
+        "stage1_gate": "normal",
+        "stage2_severity": null,
+        "confidence": 0.9733,
+        "correct": true
+      },
+      "ground_truth": "normal"
+    },
+    {
+      "image": "WhatsApp Image 2026-11-16 at 15.47.27.jpeg",
+      "resolution": {
+        "width": 1144,
+        "height": 1280
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 15.89,
+        "std_luminance": 1.344,
+        "healthy_mean_benchmark": 14.658,
+        "diseased_mean_benchmark": 15.655,
+        "decision_function_score": 1.2544,
+        "prediction": "cataract",
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_WhatsApp Image 2026-11-16 at 15.47.27.png",
+        "correct": false
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "immature",
+        "confidence": 0.5801,
+        "probabilities": {
+          "immature": 0.5801,
+          "mature": 0.4199
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_WhatsApp Image 2026-11-16 at 15.47.27.png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "cataract",
+        "confidence": 0.5496,
+        "probabilities": {
+          "cataract": 0.5496,
+          "normal": 0.4504
+        },
+        "gradcam_overlay": "gradcam\\gradcam_binary_WhatsApp Image 2026-11-16 at 15.47.27.png",
+        "correct": false
+      },
+      "two_stage_pipeline": {
+        "final_decision": "Cataract Detected (Immature)",
+        "stage1_gate": "cataract",
+        "stage2_severity": "immature",
+        "confidence": 0.5801,
+        "correct": false
+      },
+      "ground_truth": "normal"
+    },
+    {
+      "image": "WhatsApp Image 2026-11-16 at 16.12.26.jpeg",
+      "resolution": {
+        "width": 1302,
+        "height": 1600
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 13.716,
+        "std_luminance": 0.989,
+        "healthy_mean_benchmark": 14.658,
+        "diseased_mean_benchmark": 15.655,
+        "decision_function_score": -1.0288,
+        "prediction": "normal",
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_WhatsApp Image 2026-11-16 at 16.12.26.png",
+        "correct": true
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "immature",
+        "confidence": 0.5781,
+        "probabilities": {
+          "immature": 0.5781,
+          "mature": 0.4219
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_WhatsApp Image 2026-11-16 at 16.12.26.png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "normal",
+        "confidence": 0.5998,
+        "probabilities": {
+          "cataract": 0.4002,
+          "normal": 0.5998
+        },
+        "gradcam_overlay": "gradcam\\gradcam_binary_WhatsApp Image 2026-11-16 at 16.12.26.png",
+        "correct": true
+      },
+      "two_stage_pipeline": {
+        "final_decision": "No Cataract Detected (Normal)",
+        "stage1_gate": "normal",
+        "stage2_severity": null,
+        "confidence": 1.0288,
+        "correct": true
+      },
+      "ground_truth": "normal"
+    },
+    {
+      "image": "WhatsApp Image 2026-11-16 at 16.12.27.jpeg",
+      "resolution": {
+        "width": 1272,
+        "height": 1600
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 14.855,
+        "std_luminance": 1.275,
+        "healthy_mean_benchmark": 14.658,
+        "diseased_mean_benchmark": 15.655,
+        "decision_function_score": -1.0137,
+        "prediction": "normal",
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_WhatsApp Image 2026-11-16 at 16.12.27.png",
+        "correct": true
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "mature",
+        "confidence": 0.5325,
+        "probabilities": {
+          "immature": 0.4675,
+          "mature": 0.5325
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_WhatsApp Image 2026-11-16 at 16.12.27.png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "normal",
+        "confidence": 0.5091,
+        "probabilities": {
+          "cataract": 0.4909,
+          "normal": 0.5091
+        },
+        "gradcam_overlay": "gradcam\\gradcam_binary_WhatsApp Image 2026-11-16 at 16.12.27.png",
+        "correct": true
+      },
+      "two_stage_pipeline": {
+        "final_decision": "No Cataract Detected (Normal)",
+        "stage1_gate": "normal",
+        "stage2_severity": null,
+        "confidence": 1.0137,
+        "correct": true
+      },
+      "ground_truth": "normal"
+    },
+    {
+      "image": "WhatsApp Image 2026-11-16 at 16.50.29 (1).jpeg",
+      "resolution": {
+        "width": 1600,
+        "height": 1600
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 14.082,
+        "std_luminance": 1.61,
+        "healthy_mean_benchmark": 14.658,
+        "diseased_mean_benchmark": 15.655,
+        "decision_function_score": -1.0034,
+        "prediction": "normal",
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_WhatsApp Image 2026-11-16 at 16.50.29 (1).png",
+        "correct": true
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "immature",
+        "confidence": 0.5774,
+        "probabilities": {
+          "immature": 0.5774,
+          "mature": 0.4226
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_WhatsApp Image 2026-11-16 at 16.50.29 (1).png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "cataract",
+        "confidence": 0.5376,
+        "probabilities": {
+          "cataract": 0.5376,
+          "normal": 0.4624
+        },
+        "gradcam_overlay": "gradcam\\gradcam_binary_WhatsApp Image 2026-11-16 at 16.50.29 (1).png",
+        "correct": false
+      },
+      "two_stage_pipeline": {
+        "final_decision": "No Cataract Detected (Normal)",
+        "stage1_gate": "normal",
+        "stage2_severity": null,
+        "confidence": 1.0034,
+        "correct": true
+      },
+      "ground_truth": "normal"
+    },
+    {
+      "image": "WhatsApp Image 2026-11-16 at 16.50.29.jpeg",
+      "resolution": {
+        "width": 1600,
+        "height": 1600
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 14.289,
+        "std_luminance": 1.591,
+        "healthy_mean_benchmark": 14.658,
+        "diseased_mean_benchmark": 15.655,
+        "decision_function_score": -0.9944,
+        "prediction": "normal",
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_WhatsApp Image 2026-11-16 at 16.50.29.png",
+        "correct": true
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "immature",
+        "confidence": 0.5296,
+        "probabilities": {
+          "immature": 0.5296,
+          "mature": 0.4704
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_WhatsApp Image 2026-11-16 at 16.50.29.png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "normal",
+        "confidence": 0.5084,
+        "probabilities": {
+          "cataract": 0.4916,
+          "normal": 0.5084
+        },
+        "gradcam_overlay": "gradcam\\gradcam_binary_WhatsApp Image 2026-11-16 at 16.50.29.png",
+        "correct": true
+      },
+      "two_stage_pipeline": {
+        "final_decision": "No Cataract Detected (Normal)",
+        "stage1_gate": "normal",
+        "stage2_severity": null,
+        "confidence": 0.9944,
+        "correct": true
+      },
+      "ground_truth": "normal"
+    },
+    {
+      "image": "WhatsApp Image 2026-11-16 at 19.13.01.jpeg",
+      "resolution": {
+        "width": 1200,
+        "height": 1600
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 14.334,
+        "std_luminance": 1.522,
+        "healthy_mean_benchmark": 14.658,
+        "diseased_mean_benchmark": 15.655,
+        "decision_function_score": -0.9997,
+        "prediction": "normal",
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_WhatsApp Image 2026-11-16 at 19.13.01.png",
+        "correct": true
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "immature",
+        "confidence": 0.6157,
+        "probabilities": {
+          "immature": 0.6157,
+          "mature": 0.3843
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_WhatsApp Image 2026-11-16 at 19.13.01.png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "normal",
+        "confidence": 0.5303,
+        "probabilities": {
+          "cataract": 0.4697,
+          "normal": 0.5303
+        },
+        "gradcam_overlay": "gradcam\\gradcam_binary_WhatsApp Image 2026-11-16 at 19.13.01.png",
+        "correct": true
+      },
+      "two_stage_pipeline": {
+        "final_decision": "No Cataract Detected (Normal)",
+        "stage1_gate": "normal",
+        "stage2_severity": null,
+        "confidence": 0.9997,
+        "correct": true
+      },
+      "ground_truth": "normal"
+    },
+    {
+      "image": "WhatsApp Image 2026-11-16 at 19.14.20.jpeg",
+      "resolution": {
+        "width": 900,
+        "height": 1600
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 15.15,
+        "std_luminance": 1.594,
+        "healthy_mean_benchmark": 14.658,
+        "diseased_mean_benchmark": 15.655,
+        "decision_function_score": -0.434,
+        "prediction": "normal",
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_WhatsApp Image 2026-11-16 at 19.14.20.png",
+        "correct": true
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "immature",
+        "confidence": 0.5627,
+        "probabilities": {
+          "immature": 0.5627,
+          "mature": 0.4373
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_WhatsApp Image 2026-11-16 at 19.14.20.png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "normal",
+        "confidence": 0.5334,
+        "probabilities": {
+          "cataract": 0.4666,
+          "normal": 0.5334
+        },
+        "gradcam_overlay": "gradcam\\gradcam_binary_WhatsApp Image 2026-11-16 at 19.14.20.png",
+        "correct": true
+      },
+      "two_stage_pipeline": {
+        "final_decision": "No Cataract Detected (Normal)",
+        "stage1_gate": "normal",
+        "stage2_severity": null,
+        "confidence": 0.434,
+        "correct": true
+      },
+      "ground_truth": "normal"
+    },
+    {
+      "image": "WhatsApp Image 2026-11-16 at 19.14.21.jpeg",
+      "resolution": {
+        "width": 900,
+        "height": 1600
+      },
+      "stage1_luminance_svm": {
+        "mean_luminance": 14.792,
+        "std_luminance": 1.449,
+        "healthy_mean_benchmark": 14.658,
+        "diseased_mean_benchmark": 15.655,
+        "decision_function_score": -1.0573,
+        "prediction": "normal",
+        "fallback_center_roi_used": false,
+        "roi_visualization": "roi_masks\\roi_WhatsApp Image 2026-11-16 at 19.14.21.png",
+        "correct": true
+      },
+      "stage2_severity_efficientnet_b0": {
+        "prediction": "mature",
+        "confidence": 0.5369,
+        "probabilities": {
+          "immature": 0.4631,
+          "mature": 0.5369
+        },
+        "gradcam_overlay": "gradcam\\gradcam_severity_WhatsApp Image 2026-11-16 at 19.14.21.png"
+      },
+      "efficientnet_b0_binary_model": {
+        "prediction": "cataract",
+        "confidence": 0.5212,
+        "probabilities": {
+          "cataract": 0.5212,
+          "normal": 0.4788
+        },
+        "gradcam_overlay": "gradcam\\gradcam_binary_WhatsApp Image 2026-11-16 at 19.14.21.png",
+        "correct": false
+      },
+      "two_stage_pipeline": {
+        "final_decision": "No Cataract Detected (Normal)",
+        "stage1_gate": "normal",
+        "stage2_severity": null,
+        "confidence": 1.0573,
+        "correct": true
+      },
+      "ground_truth": "normal"
+    }
+  ],
+  "metrics": {
+    "ground_truth": "all_normal",
+    "total_samples": 9,
+    "stage1_svm_accuracy": 0.8889,
+    "two_stage_pipeline_accuracy": 0.8889,
+    "b0_binary_accuracy": 0.6667,
+    "stage1_svm_specificity": 0.8889,
+    "b0_binary_specificity": 0.6667
+  }
+}

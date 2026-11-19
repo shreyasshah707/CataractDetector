@@ -1,0 +1,41 @@
+{
+  "evaluated_at": "2026-11-07T09:35:27.112463+00:00",
+  "model_path": "D:\\Projects\\EDD\\v2\\models\\checkpoints_b0_binary\\best.h5",
+  "val_dir": "D:\\Projects\\EDD\\v2\\data\\stage1\\val",
+  "img_size": 224,
+  "class_names": [
+    "normal",
+    "cataract"
+  ],
+  "num_classes": 2,
+  "num_images": 158,
+  "confusion_matrix": [
+    [
+      23,
+      53
+    ],
+    [
+      48,
+      34
+    ]
+  ],
+  "accuracy": 0.36075949367088606,
+  "precision_per_class": [
+    0.323943661971831,
+    0.39080459770114945
+  ],
+  "recall_per_class": [
+    0.3026315789473684,
+    0.4146341463414634
+  ],
+  "f1_per_class": [
+    0.3129251700680272,
+    0.40236686390532544
+  ],
+  "precision_macro": 0.3573741298364902,
+  "recall_macro": 0.3586328626444159,
+  "f1_macro": 0.3576460169866763,
+  "roc_auc_ovr": 0.3612002567394095,
+  "pr_auc_macro": 0.4165028170838455,
+  "gradcam": []
+}
